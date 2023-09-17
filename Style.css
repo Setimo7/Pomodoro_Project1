@@ -1,0 +1,59 @@
+body{
+    background-color: rgb(27, 0, 42);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.container{
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+h1{
+    color: #333;
+}
+#timer{
+    font-size: 48px;
+    margin: 20px 0;
+}
+.buttons{
+    margin-top: 40px;
+}
+button{
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:disabled{
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+button:hover{
+    background-color: #276d24;
+}
+button:focus{
+    outline: none;
+}
+.container:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.container .timer-buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.container .timer-buttons button:first-child{
+    margin-left: 0;
+}
+.container .timer-buttons button:last-child{
+    margin-right: 0;
+}
