@@ -1,18 +1,26 @@
-body{
-    background-color: rgb(27, 0, 42);
+*{
+    margin: 0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(250deg, rgb(94, 0, 120), rgb(44, 1, 64));
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 .container{
-    max-width: 400px;
-    margin: 100px auto;
+    max-width: 300px;
+    margin: 265px auto;
     padding: 20px;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background: transparent;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 h1{
-    color: #333;
+    color: #ffffff;
 }
 #timer{
     font-size: 48px;
@@ -24,19 +32,20 @@ h1{
 button{
     padding: 10px 20px;
     font-size: 18px;
-    background-color: #4CAF50;
-    color: #fff;
+    background-color: #3d3d3d;
+    color: #ffffff;
     border: none;
-    border-radius: 3px;
+    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
+    box-shadow: 0 2px 3px 3px rgba(0, 0, 0, 0.5);
 }
 button:disabled{
-    background-color: #ccc;
+    background-color: #000000;
     cursor: not-allowed;
 }
 button:hover{
-    background-color: #276d24;
+    background-color: #000000;
 }
 button:focus{
     outline: none;
